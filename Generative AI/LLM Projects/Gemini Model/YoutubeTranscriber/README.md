@@ -1,7 +1,7 @@
 # Clip Insight
 ## Your YouTube Videos, Summarized!
 
-This application allows you to convert YouTube videos into concise summaries using the Gemini model. Gemini is a state-of-the-art natural language processing model designed for summarization tasks. With this tool, you can quickly generate summaries for YouTube videos, making it easier to grasp the main points without watching the entire video.
+Clip Insight allows you to convert YouTube videos into concise summaries using the Gemini model. Gemini is a state-of-the-art natural language processing model designed for summarization tasks. With this tool, you can quickly generate summaries for YouTube videos, making it easier to grasp the main points without watching the entire video.
 
 ## Features
 
