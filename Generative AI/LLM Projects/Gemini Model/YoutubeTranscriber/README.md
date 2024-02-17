@@ -15,9 +15,8 @@ Clip Insight allows you to convert YouTube videos into concise summaries using t
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Make sure you have the necessary API keys and environment variables set up (refer to the documentation of the respective APIs).
 4. Run the `app.py` file using `streamlit run app.py`.
-5. Select the subject for which you want to generate detailed notes.
-6. Enter the YouTube video link for which you want to extract the transcript.
-7. Click on the "Summarize Video" button to generate the notes.
+5. Enter the YouTube video link for which you want to extract the transcript.
+6. Click on the "Summarize Video" button to generate the notes.
 
 ## Requirements
 
