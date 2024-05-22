@@ -38,7 +38,7 @@ def get_transcript_of_yt_video(video_url):
         return video_transcript
     except Exception as e:
         raise e
-    
+st.set_page_config(page_title = "Clip Insight")   
 st.title("Clip Insight")
 st.subheader("Unlock the Power of Brevity: Your YouTube Videos, Summarized!")
 

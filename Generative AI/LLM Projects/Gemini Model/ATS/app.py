@@ -44,7 +44,8 @@ def input_pdf_setup(uploaded_file):
 
 # Streamlit App
 st.set_page_config(page_title="ATS Resume Scanner")
-st.header("ATS Tracker")
+st.title("Resume Boost : Simplified Job Hunt")
+st.subheader("Elevate Your Job Search")
 input_text = st.text_area("Job description: ", key ="input")
 uploaded_file = st.file_uploader("Upload your resume(PDF)..", type = ["pdf"])
 
@@ -60,10 +61,11 @@ You are an experienced HR with Technical Experience in the field of Full Stack D
 Data Analyst, Devops. Your task is review the provided resume against the job description for these profiles.
 Please share your professional evaluation on whether the candidate's profile aligns with the job description.
 Highlight the strengths and weaknesses of the applicant in relation to the specified job description.
+Provide response in points and paragraphs. Keep it precise.
 """
 
 input_prompt3 = """
-You are askilled ATS(Application Tracking System) scanner with deep understanding of Full Stack Development, Data Science, Web Development, Big data Engineering,
+You are a skilled ATS(Application Tracking System) scanner with deep understanding of Full Stack Development, Data Science, Web Development, Big data Engineering,
 Data Analyst, Devops and deep ATS functionality.
 Your task is to evaluate the resume against the job description. Give me the percentage of match if the resume matches the job description.
 first the output should come as perentage and then keywords missing and last final thoughts.
@@ -73,8 +75,8 @@ if submit1:
     if uploaded_file is not None:
         pdf_content = input_pdf_setup(uploaded_file)
         response = get_gemini_response(input_prompt1, pdf_content, input_text)
-        st.subheader("The response is  ")
-        st.write(response)
+        st.subheader("The Response :")
+        st.markdown(response)
     else:
         st.write("Please Upload file")
 
@@ -83,6 +85,6 @@ elif submit3:
         pdf_content = input_pdf_setup(uploaded_file)
         response = get_gemini_response(input_prompt3, pdf_content, input_text)
         st.subheader("The response is  ")
-        st.write(response)
+        st.markdown(response)
     else:
         st.write("Please Upload file")
