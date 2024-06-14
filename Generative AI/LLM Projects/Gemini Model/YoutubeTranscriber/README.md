@@ -3,6 +3,8 @@
 
 Clip Insight allows you to convert YouTube videos into concise summaries using the Gemini model. Gemini is a state-of-the-art natural language processing model designed for summarization tasks. With this tool, you can quickly generate summaries for YouTube videos, making it easier to grasp the main points without watching the entire video.
 
+![Clip Insight Demo](https://github.com/persie27/My-Works/blob/main/Generative%20AI/LLM%20Projects/Gemini%20Model/YoutubeTranscriber/ClipInsight.gif)
+
 ## Features
 
 - **YouTube Video Summarization:** Extract key information and generate a summary for YouTube videos.
